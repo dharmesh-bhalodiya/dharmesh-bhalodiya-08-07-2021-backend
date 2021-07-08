@@ -28,7 +28,7 @@ const getMessageById = async (id) => {
 * @returns {Promise<Message>}
 */
 const getMessagesBySender = async (id) => {
-  return Message.find({ sender: id });
+  return Message.find({ sender: id }).sort({'createdAt': 'desc'});
 };
 
 
@@ -38,7 +38,7 @@ const getMessagesBySender = async (id) => {
 * @returns {Promise<Message>}
 */
 const getMessagesByReceiver = async (id) => {
-  return Message.find({ receiver: id });
+  return Message.find({ receiver: id }).sort({'createdAt': 'desc'});
 };
 
 

@@ -14,7 +14,7 @@ npm install or yarn install
 - Run Development Server.
 
 ```sh
-npm dev or yarn dev
+npm run dev or yarn dev
 ```
 
 - Run Production Server.
